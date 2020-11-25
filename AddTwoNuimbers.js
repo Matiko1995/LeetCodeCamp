@@ -1,13 +1,14 @@
 // 计算两数之和
-var twoSum = function name(nums, taget) {
+var twoSum = function name(nums, target) {
     const map = new Map();
 
     for (let i = 0; i < nums.length; i++) {
-        const component = taget - nums[i];
+        const complement= target - nums[i];
         if (map.has(complement)) {
-            return [map.get(component),i];
+            return [map.get(complement),i];
         } else {
-            map.set(num[i], i)
+            map.set(nums[i], i)
         }
     }
+    return []
 }
