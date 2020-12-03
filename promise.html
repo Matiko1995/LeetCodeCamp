@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ajax = function (url) {
+            return new Promise (function(res,rej){
+                if (Math.random < 0.5) {
+                    res()
+                } else {
+                    rej()
+                }
+            })
+        }
+        ajax('/xxx').then(()=>{
+            console.log('成功');
+        },()=>{
+            console.log('失败');
+        })
+        console.log()
+    </script>
+</body>
+</html>
